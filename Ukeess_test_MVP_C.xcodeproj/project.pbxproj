@@ -17,6 +17,10 @@
 		4F1F1FCC283F625B002A880C /* users_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F1F1FCB283F625B002A880C /* users_data.json */; };
 		4F1F1FD0283F6991002A880C /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FCF283F6991002A880C /* UserPresenter.swift */; };
 		4F1F1FD3283F69AB002A880C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FD2283F69AB002A880C /* Person.swift */; };
+		4F1F1FD5283F7F3A002A880C /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FD4283F7F3A002A880C /* UserViewController.swift */; };
+		4F1F1FD7283F9875002A880C /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FD6283F9875002A880C /* UserInteractor.swift */; };
+		4F1F1FD9283F98CB002A880C /* JsonUsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FD8283F98CB002A880C /* JsonUsersService.swift */; };
+		4F1F1FDB283F9CF9002A880C /* UrlUsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FDA283F9CF9002A880C /* UrlUsersService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		4F1F1FCB283F625B002A880C /* users_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users_data.json; sourceTree = "<group>"; };
 		4F1F1FCF283F6991002A880C /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		4F1F1FD2283F69AB002A880C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		4F1F1FD4283F7F3A002A880C /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		4F1F1FD6283F9875002A880C /* UserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
+		4F1F1FD8283F98CB002A880C /* JsonUsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUsersService.swift; sourceTree = "<group>"; };
+		4F1F1FDA283F9CF9002A880C /* UrlUsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlUsersService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 			children = (
 				4F1F1FBC283F61C6002A880C /* LaunchScreen.storyboard */,
 				4F1F1FB5283F61C5002A880C /* RootViewController.swift */,
+				4F1F1FD4283F7F3A002A880C /* UserViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -106,7 +115,10 @@
 		4F1F1FCE283F6971002A880C /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				4F1F1FD6283F9875002A880C /* UserInteractor.swift */,
 				4F1F1FCF283F6991002A880C /* UserPresenter.swift */,
+				4F1F1FD8283F98CB002A880C /* JsonUsersService.swift */,
+				4F1F1FDA283F9CF9002A880C /* UrlUsersService.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -191,6 +203,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F1F1FC7283F6206002A880C /* AppCoordinator.swift in Sources */,
+				4F1F1FD7283F9875002A880C /* UserInteractor.swift in Sources */,
+				4F1F1FDB283F9CF9002A880C /* UrlUsersService.swift in Sources */,
+				4F1F1FD9283F98CB002A880C /* JsonUsersService.swift in Sources */,
+				4F1F1FD5283F7F3A002A880C /* UserViewController.swift in Sources */,
 				4F1F1FB6283F61C5002A880C /* RootViewController.swift in Sources */,
 				4F1F1FC9283F6215002A880C /* DependencyRegistry.swift in Sources */,
 				4F1F1FB2283F61C5002A880C /* AppDelegate.swift in Sources */,

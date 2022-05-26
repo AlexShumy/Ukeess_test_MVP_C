@@ -25,9 +25,16 @@ extension AppCoordinator: ViewControllersCoordination {
         navigationController.viewControllers = [vc]
     }
     
-    //func showLocalUsersVC()
+    func showJsonUsersVC() {
+        let vc = registry.makeJsonlUsersVC(coordinator: self)
+        navigationController.pushViewController(vc, animated: true)
+        
+    }
     
-    //func showUrlUsersVC()
+    func showUrlUsersVC() {
+        let vc = registry.makeUrlUsersVC(coordinator: self)
+        navigationController.pushViewController(vc, animated: true)
+    }
     
     //func showUserDetailsVC()
 }

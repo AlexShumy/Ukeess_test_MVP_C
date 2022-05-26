@@ -9,6 +9,8 @@ import UIKit
 
 protocol ViewControllersCoordination: AnyObject {
     func showRootVC()
+    func showJsonUsersVC()
+    func showUrlUsersVC()
 }
 
 class RootViewController: UIViewController {
@@ -59,11 +61,11 @@ class RootViewController: UIViewController {
 
     
     @objc private func jsonButtonAction() {
-        //showLocalUsers
+        coordinator?.showJsonUsersVC()
     }
     
     @objc private func urlButtonAction() {
-        //showRemoteUsers
+        coordinator?.showUrlUsersVC()
     }
 }
 

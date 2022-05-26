@@ -16,9 +16,23 @@ class DependencyRegistry {
         return vc
     }
     
-    //func makeLocalUsersVC(corrdinator: ViewControllersCoordination) -> UIViewController
+    func makeJsonlUsersVC(coordinator: ViewControllersCoordination) -> UIViewController {
+        let loader = JsonUsersService()
+        let interactor = UserInteractor(userService: loader)
+        let presenter  = UserPresenter(interactor: interactor)
+        let vc = UserViewController(presenter: presenter)
+        vc.coordinator = coordinator
+        return vc
+    }
     
-    //func makeUrlUsersVC(corrdinator: ViewControllersCoordination) -> UIViewController
+    func makeUrlUsersVC(coordinator: ViewControllersCoordination) -> UIViewController {
+        let loader = UrlUsersService()
+        let interactor = UserInteractor(userService: loader)
+        let presenter  = UserPresenter(interactor: interactor)
+        let vc = UserViewController(presenter: presenter)
+        vc.coordinator = coordinator
+        return vc
+    }
     
     //func makeUserDetailsVC(corrdinator: ViewControllersCoordination) -> UIViewController
     
