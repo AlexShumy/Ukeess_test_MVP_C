@@ -1,0 +1,132 @@
+[
+  {
+    "id": 135,
+    "name": "Audrey Gross",
+    "username": "Aud88",
+    "email": "audreygross@gmail.com",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Adelino",
+      "zipcode": "92998-3874"
+    },
+    "picture": "http://thepastisunwritten.files.wordpress.com/2010/12/pattieboyd1.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Berger Hebert",
+    "username": "Berg88",
+    "email": "berg@gmail.com",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Eureka",
+      "zipcode": "92998-3874"
+    },
+    "picture": "https://cdns-images.dzcdn.net/images/artist/ef6244c655e8cbe91eeb56bb6f934176/500x500.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Andrew Gross",
+    "username": "Andrew89",
+    "email": "andrew@gmail.com",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Marienthal",
+      "zipcode": "92998-3874"
+    },
+    "picture": "http://wttsfm.com/wp-content/uploads/2011/12/paul-mccartney.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Kelly Kinney",
+    "username": "Kell89",
+    "email": "kelly@gmail.com",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Soudan",
+      "zipcode": "92998-3874"
+    },
+    "picture": ""
+  },
+  {
+    "id": 7,
+    "name": "Ella Howard",
+    "username": "Ella89",
+    "email": "ellahoward@gmail.com",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Chloride",
+      "zipcode": "92998-3874"
+    },
+    "picture": ""
+  },
+  {
+    "id": 6,
+    "name": "Hays Blackwell",
+    "username": "Hays89",
+    "email": "hays@gmail.com",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Alfarata",
+      "zipcode": "92998-3874"
+    },
+    "picture": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Jim_Morrison_1969.JPG"
+  },
+  {
+    "id": 7,
+    "name": "Roberson Rosa",
+    "username": "Rrosa89",
+    "email": "rosa@gmail.com",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Kingstowne",
+      "zipcode": "92998-3874"
+    },
+    "picture": ""
+  },
+  {
+    "id": 126,
+    "name": "Owen Santana",
+    "username": "Santa89",
+    "email": "owen@gmail.com",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Kingstowne",
+      "zipcode": "92998-3874"
+    },
+    "picture": "https://www.historic-newspapers.co.uk/app/uploads/2020/06/4202525895_808bda37fe_o.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Vicky Burnett",
+    "username": "Vic89",
+    "email": "vic@gmail.com",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Lookingglass",
+      "zipcode": "92998-3874"
+    },
+    "picture": ""
+  },
+  {
+    "id": 9,
+    "name": "Elizabeth Valenzuela",
+    "username": "Elly89",
+    "email": "elly@gmail.com",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Mathews",
+      "zipcode": "92998-3874"
+    },
+    "picture": ""
+  }
+]
