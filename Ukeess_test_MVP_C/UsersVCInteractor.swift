@@ -7,7 +7,7 @@
 
 import Foundation
 
-class UserInteractor {
+class UsersVCInteractor {
     
     private let userService: UserLoader
     init(userService: UserLoader) {
@@ -17,5 +17,4 @@ class UserInteractor {
     func loadUsers(completion: @escaping ([User]) -> Void) {
         userService.loadUsers(completion: completion)
     }
-
 }

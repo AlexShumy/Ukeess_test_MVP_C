@@ -10,7 +10,7 @@
       "city": "Adelino",
       "zipcode": "92998-3874"
     },
-    "picture": "http://thepastisunwritten.files.wordpress.com/2010/12/pattieboyd1.jpg"
+    "picture": "https://thepastisunwritten.files.wordpress.com/2010/12/pattieboyd1.jpg"
   },
   {
     "id": 22,
@@ -36,20 +36,20 @@
       "city": "Marienthal",
       "zipcode": "92998-3874"
     },
-    "picture": "http://wttsfm.com/wp-content/uploads/2011/12/paul-mccartney.jpg"
+    "picture": "https://wttsfm.com/wp-content/uploads/2011/12/paul-mccartney.jpg"
   },
   {
     "id": 9,
-    "name": "Kelly Kinney",
-    "username": "Kell89",
-    "email": "kelly@gmail.com",
+    "name": "Volodymyr Zelenskiy",
+    "username": "SuperZelenskiy",
+    "email": "president@gmail.com",
     "address": {
-      "street": "Kulas Light",
-      "suite": "Apt. 556",
-      "city": "Soudan",
+      "street": "Bankova",
+      "suite": "Apt. 31",
+      "city": "Kyiv",
       "zipcode": "92998-3874"
     },
-    "picture": ""
+    "picture": "https://cdn.theatlantic.com/thumbor/YpzWfACCpQpsftj4ikC9hUbxpF4=/0x0:2500x1406/960x540/media/img/mt/2022/02/AP22057571621922/original.jpg"
   },
   {
     "id": 7,

@@ -18,22 +18,28 @@ class DependencyRegistry {
     
     func makeJsonlUsersVC(coordinator: ViewControllersCoordination) -> UIViewController {
         let loader = JsonUsersService()
-        let interactor = UserInteractor(userService: loader)
-        let presenter  = UserPresenter(interactor: interactor)
-        let vc = UserViewController(presenter: presenter)
+        let interactor = UsersVCInteractor(userService: loader)
+        let presenter  = UsersVCPresenter(interactor: interactor)
+        let vc = UsersViewController(presenter: presenter)
         vc.coordinator = coordinator
         return vc
     }
     
     func makeUrlUsersVC(coordinator: ViewControllersCoordination) -> UIViewController {
         let loader = UrlUsersService()
-        let interactor = UserInteractor(userService: loader)
-        let presenter  = UserPresenter(interactor: interactor)
-        let vc = UserViewController(presenter: presenter)
+        let interactor = UsersVCInteractor(userService: loader)
+        let presenter  = UsersVCPresenter(interactor: interactor)
+        let vc = UsersViewController(presenter: presenter)
         vc.coordinator = coordinator
         return vc
     }
     
-    //func makeUserDetailsVC(corrdinator: ViewControllersCoordination) -> UIViewController
+    func makeUserDetailsVC(user: UserDetailVCModel) -> UIViewController {
+        let loader = UserImageService.shared
+        let interactor = UserDetailVCInteractor(user: user)
+        let presenter = UserDetailsVCPresenter(interactor: interactor, imageLoader: loader)
+        let vc = UserDetailsViewController(presenter: presenter)
+        return vc
+    }
     
 }

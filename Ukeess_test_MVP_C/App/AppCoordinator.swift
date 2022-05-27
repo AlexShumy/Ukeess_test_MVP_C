@@ -12,6 +12,7 @@ class AppCoordinator {
     
     private let registry: DependencyRegistry
     private let navigationController: UINavigationController
+    
     init(registry: DependencyRegistry, navigationController: UINavigationController) {
         self.registry = registry
         self.navigationController = navigationController
@@ -20,6 +21,7 @@ class AppCoordinator {
 
 
 extension AppCoordinator: ViewControllersCoordination {
+    
     func showRootVC() {
         let vc = registry.makeRootVC(coordinator: self)
         navigationController.viewControllers = [vc]
@@ -36,5 +38,8 @@ extension AppCoordinator: ViewControllersCoordination {
         navigationController.pushViewController(vc, animated: true)
     }
     
-    //func showUserDetailsVC()
+    func showUserDetailsVC(user: UserDetailVCModel) {
+        let vc = registry.makeUserDetailsVC(user: user)
+        navigationController.pushViewController(vc, animated: true)
+    }
 }

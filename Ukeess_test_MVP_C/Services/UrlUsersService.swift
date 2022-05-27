@@ -10,7 +10,7 @@ import Foundation
 class UrlUsersService: UserLoader {
     
     func loadUsers(completion: @escaping ([User]) -> Void) {
-
+        
         let urlString = "https://jsonplaceholder.typicode.com/users"
         guard let url = URL(string: urlString) else { return }
         

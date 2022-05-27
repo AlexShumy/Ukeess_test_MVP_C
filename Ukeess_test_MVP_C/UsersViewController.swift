@@ -11,8 +11,8 @@ protocol UserPresenterViewable: AnyObject {
     func reloadData()
 }
 
-class UserViewController: UIViewController {
-
+class UsersViewController: UIViewController {
+    
     private let userTableView: UITableView = {
         let table = UITableView()
         table.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
@@ -20,9 +20,10 @@ class UserViewController: UIViewController {
     }()
     
     weak var coordinator: ViewControllersCoordination?
-    private var presenter: UserVCPresentable
     
-    init(presenter: UserVCPresentable) {
+    private var presenter: UsersVCPresentable
+    
+    init(presenter: UsersVCPresentable) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
@@ -35,8 +36,8 @@ class UserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Users"
-        presenter.view = self
         configurUserTableView()
+        presenter.view = self
         presenter.loadUsers()
     }
     
@@ -47,12 +48,13 @@ class UserViewController: UIViewController {
         userTableView.delegate = self
         
     }
-
+    
 }
 
 
 //MARK: - UITableViewDataSource
-extension UserViewController: UITableViewDataSource {
+extension UsersViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         presenter.numberOfRowsInSection(section)
     }
@@ -67,15 +69,19 @@ extension UserViewController: UITableViewDataSource {
 
 
 //MARK: - UITableViewDelegate
-extension UserViewController: UITableViewDelegate {
+extension UsersViewController: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // go to UserDetailsVC
+        tableView.deselectRow(at: indexPath, animated: true)
+        let model = presenter.getDetailedModel(for: indexPath)
+        coordinator?.showUserDetailsVC(user: model)
     }
 }
 
 
 //MARK: - UserPresenterViewable
-extension UserViewController: UserPresenterViewable {
+extension UsersViewController: UserPresenterViewable {
+    
     func reloadData() {
         DispatchQueue.main.async {
             self.userTableView.reloadData()
@@ -86,5 +92,6 @@ extension UserViewController: UserPresenterViewable {
 
 //MARK: - PersonsTableViewCellModel
 struct UserTableViewModel {
+    
     let user: User
 }

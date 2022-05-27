@@ -11,16 +11,20 @@
 		4F1F1FB4283F61C5002A880C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FB3283F61C5002A880C /* SceneDelegate.swift */; };
 		4F1F1FB6283F61C5002A880C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FB5283F61C5002A880C /* RootViewController.swift */; };
 		4F1F1FBB283F61C6002A880C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F1F1FBA283F61C6002A880C /* Assets.xcassets */; };
-		4F1F1FBE283F61C6002A880C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1F1FBC283F61C6002A880C /* LaunchScreen.storyboard */; };
 		4F1F1FC7283F6206002A880C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FC6283F6206002A880C /* AppCoordinator.swift */; };
 		4F1F1FC9283F6215002A880C /* DependencyRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FC8283F6215002A880C /* DependencyRegistry.swift */; };
 		4F1F1FCC283F625B002A880C /* users_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F1F1FCB283F625B002A880C /* users_data.json */; };
-		4F1F1FD0283F6991002A880C /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FCF283F6991002A880C /* UserPresenter.swift */; };
-		4F1F1FD3283F69AB002A880C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FD2283F69AB002A880C /* Person.swift */; };
-		4F1F1FD5283F7F3A002A880C /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FD4283F7F3A002A880C /* UserViewController.swift */; };
-		4F1F1FD7283F9875002A880C /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FD6283F9875002A880C /* UserInteractor.swift */; };
+		4F1F1FD0283F6991002A880C /* UsersVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FCF283F6991002A880C /* UsersVCPresenter.swift */; };
+		4F1F1FD3283F69AB002A880C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FD2283F69AB002A880C /* User.swift */; };
+		4F1F1FD5283F7F3A002A880C /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FD4283F7F3A002A880C /* UsersViewController.swift */; };
+		4F1F1FD7283F9875002A880C /* UsersVCInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FD6283F9875002A880C /* UsersVCInteractor.swift */; };
 		4F1F1FD9283F98CB002A880C /* JsonUsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FD8283F98CB002A880C /* JsonUsersService.swift */; };
 		4F1F1FDB283F9CF9002A880C /* UrlUsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F1FDA283F9CF9002A880C /* UrlUsersService.swift */; };
+		4F3316362840A7F3000CCBDA /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3316342840A7F3000CCBDA /* UserDetailsViewController.swift */; };
+		4F3316372840A7F3000CCBDA /* UserDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F3316352840A7F3000CCBDA /* UserDetailsViewController.xib */; };
+		4F3316392840B093000CCBDA /* UserImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3316382840B093000CCBDA /* UserImageService.swift */; };
+		4F33163B2840B845000CCBDA /* UserDetailsVCInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F33163A2840B845000CCBDA /* UserDetailsVCInteractor.swift */; };
+		4F33163D2840B856000CCBDA /* UserDetailsVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F33163C2840B856000CCBDA /* UserDetailsVCPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,17 +33,21 @@
 		4F1F1FB3283F61C5002A880C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4F1F1FB5283F61C5002A880C /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		4F1F1FBA283F61C6002A880C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4F1F1FBD283F61C6002A880C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F1F1FBF283F61C6002A880C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F1F1FC6283F6206002A880C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		4F1F1FC8283F6215002A880C /* DependencyRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyRegistry.swift; sourceTree = "<group>"; };
 		4F1F1FCB283F625B002A880C /* users_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users_data.json; sourceTree = "<group>"; };
-		4F1F1FCF283F6991002A880C /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
-		4F1F1FD2283F69AB002A880C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		4F1F1FD4283F7F3A002A880C /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
-		4F1F1FD6283F9875002A880C /* UserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
+		4F1F1FCF283F6991002A880C /* UsersVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVCPresenter.swift; sourceTree = "<group>"; };
+		4F1F1FD2283F69AB002A880C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4F1F1FD4283F7F3A002A880C /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		4F1F1FD6283F9875002A880C /* UsersVCInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVCInteractor.swift; sourceTree = "<group>"; };
 		4F1F1FD8283F98CB002A880C /* JsonUsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUsersService.swift; sourceTree = "<group>"; };
 		4F1F1FDA283F9CF9002A880C /* UrlUsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlUsersService.swift; sourceTree = "<group>"; };
+		4F3316342840A7F3000CCBDA /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		4F3316352840A7F3000CCBDA /* UserDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsViewController.xib; sourceTree = "<group>"; };
+		4F3316382840B093000CCBDA /* UserImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageService.swift; sourceTree = "<group>"; };
+		4F33163A2840B845000CCBDA /* UserDetailsVCInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsVCInteractor.swift; sourceTree = "<group>"; };
+		4F33163C2840B856000CCBDA /* UserDetailsVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsVCPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +84,7 @@
 				4F1F1FC5283F61DD002A880C /* App */,
 				4F1F1FD1283F6996002A880C /* Model */,
 				4F1F1FCD283F6949002A880C /* Views */,
-				4F1F1FCE283F6971002A880C /* Presenters */,
+				4F1F1FCE283F6971002A880C /* Services */,
 				4F1F1FBF283F61C6002A880C /* Info.plist */,
 			);
 			path = Ukeess_test_MVP_C;
@@ -105,30 +113,58 @@
 		4F1F1FCD283F6949002A880C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4F1F1FBC283F61C6002A880C /* LaunchScreen.storyboard */,
-				4F1F1FB5283F61C5002A880C /* RootViewController.swift */,
-				4F1F1FD4283F7F3A002A880C /* UserViewController.swift */,
+				4F3D7EB328410D3300F219AA /* Root Screen */,
+				4F3D7EB428410D6500F219AA /* Users Screen */,
+				4FDF772B28410E6E0092CC0F /* User Details Screen */,
 			);
 			name = Views;
 			sourceTree = "<group>";
 		};
-		4F1F1FCE283F6971002A880C /* Presenters */ = {
+		4F1F1FCE283F6971002A880C /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				4F1F1FD6283F9875002A880C /* UserInteractor.swift */,
-				4F1F1FCF283F6991002A880C /* UserPresenter.swift */,
 				4F1F1FD8283F98CB002A880C /* JsonUsersService.swift */,
 				4F1F1FDA283F9CF9002A880C /* UrlUsersService.swift */,
+				4F3316382840B093000CCBDA /* UserImageService.swift */,
 			);
-			path = Presenters;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		4F1F1FD1283F6996002A880C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4F1F1FD2283F69AB002A880C /* Person.swift */,
+				4F1F1FD2283F69AB002A880C /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4F3D7EB328410D3300F219AA /* Root Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4F1F1FB5283F61C5002A880C /* RootViewController.swift */,
+			);
+			name = "Root Screen";
+			sourceTree = "<group>";
+		};
+		4F3D7EB428410D6500F219AA /* Users Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4F1F1FD4283F7F3A002A880C /* UsersViewController.swift */,
+				4F1F1FD6283F9875002A880C /* UsersVCInteractor.swift */,
+				4F1F1FCF283F6991002A880C /* UsersVCPresenter.swift */,
+			);
+			name = "Users Screen";
+			sourceTree = "<group>";
+		};
+		4FDF772B28410E6E0092CC0F /* User Details Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4F3316352840A7F3000CCBDA /* UserDetailsViewController.xib */,
+				4F3316342840A7F3000CCBDA /* UserDetailsViewController.swift */,
+				4F33163A2840B845000CCBDA /* UserDetailsVCInteractor.swift */,
+				4F33163C2840B856000CCBDA /* UserDetailsVCPresenter.swift */,
+			);
+			name = "User Details Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,7 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F1F1FCC283F625B002A880C /* users_data.json in Resources */,
-				4F1F1FBE283F61C6002A880C /* LaunchScreen.storyboard in Resources */,
+				4F3316372840A7F3000CCBDA /* UserDetailsViewController.xib in Resources */,
 				4F1F1FBB283F61C6002A880C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,31 +239,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F1F1FC7283F6206002A880C /* AppCoordinator.swift in Sources */,
-				4F1F1FD7283F9875002A880C /* UserInteractor.swift in Sources */,
+				4F1F1FD7283F9875002A880C /* UsersVCInteractor.swift in Sources */,
+				4F3316362840A7F3000CCBDA /* UserDetailsViewController.swift in Sources */,
 				4F1F1FDB283F9CF9002A880C /* UrlUsersService.swift in Sources */,
 				4F1F1FD9283F98CB002A880C /* JsonUsersService.swift in Sources */,
-				4F1F1FD5283F7F3A002A880C /* UserViewController.swift in Sources */,
+				4F1F1FD5283F7F3A002A880C /* UsersViewController.swift in Sources */,
 				4F1F1FB6283F61C5002A880C /* RootViewController.swift in Sources */,
+				4F3316392840B093000CCBDA /* UserImageService.swift in Sources */,
 				4F1F1FC9283F6215002A880C /* DependencyRegistry.swift in Sources */,
 				4F1F1FB2283F61C5002A880C /* AppDelegate.swift in Sources */,
-				4F1F1FD3283F69AB002A880C /* Person.swift in Sources */,
+				4F33163D2840B856000CCBDA /* UserDetailsVCPresenter.swift in Sources */,
+				4F1F1FD3283F69AB002A880C /* User.swift in Sources */,
+				4F33163B2840B845000CCBDA /* UserDetailsVCInteractor.swift in Sources */,
 				4F1F1FB4283F61C5002A880C /* SceneDelegate.swift in Sources */,
-				4F1F1FD0283F6991002A880C /* UserPresenter.swift in Sources */,
+				4F1F1FD0283F6991002A880C /* UsersVCPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		4F1F1FBC283F61C6002A880C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4F1F1FBD283F61C6002A880C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4F1F1FC0283F61C6002A880C /* Debug */ = {

@@ -7,22 +7,23 @@
 
 import Foundation
 
-protocol UserVCPresentable: AnyObject {
+protocol UsersVCPresentable: AnyObject {
     var view: UserPresenterViewable? { get set }
     
     func loadUsers()
     func numberOfRowsInSection(_ section: Int) -> Int
     func getModel(for indexPath: IndexPath) -> UserTableViewModel
+    func getDetailedModel(for indexPath: IndexPath) -> UserDetailVCModel
 }
 
 
-class UserPresenter {
+class UsersVCPresenter {
     
     private var usersArray = [User]()
     weak var view: UserPresenterViewable?
     
-    private let interactor: UserInteractor
-    init(interactor: UserInteractor) {
+    private let interactor: UsersVCInteractor
+    init(interactor: UsersVCInteractor) {
         self.interactor = interactor
     }
     
@@ -32,7 +33,7 @@ class UserPresenter {
 }
 
 //MARK: - UserVCPresentable
-extension UserPresenter: UserVCPresentable {
+extension UsersVCPresenter: UsersVCPresentable {
     
     func loadUsers() {
         interactor.loadUsers { users in
@@ -48,5 +49,10 @@ extension UserPresenter: UserVCPresentable {
     func getModel(for indexPath: IndexPath) -> UserTableViewModel {
         let user = getUser(for: indexPath)
         return UserTableViewModel(user: user)
+    }
+    
+    func getDetailedModel(for indexPath: IndexPath) -> UserDetailVCModel {
+        let user = getUser(for: indexPath)
+        return UserDetailVCModel(user: user)
     }
 }
