@@ -117,7 +117,7 @@
 				4F3D7EB428410D6500F219AA /* Users Screen */,
 				4FDF772B28410E6E0092CC0F /* User Details Screen */,
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		4F1F1FCE283F6971002A880C /* Services */ = {
@@ -143,7 +143,7 @@
 			children = (
 				4F1F1FB5283F61C5002A880C /* RootViewController.swift */,
 			);
-			name = "Root Screen";
+			path = "Root Screen";
 			sourceTree = "<group>";
 		};
 		4F3D7EB428410D6500F219AA /* Users Screen */ = {
@@ -153,7 +153,7 @@
 				4F1F1FD6283F9875002A880C /* UsersVCInteractor.swift */,
 				4F1F1FCF283F6991002A880C /* UsersVCPresenter.swift */,
 			);
-			name = "Users Screen";
+			path = "Users Screen";
 			sourceTree = "<group>";
 		};
 		4FDF772B28410E6E0092CC0F /* User Details Screen */ = {
@@ -164,7 +164,7 @@
 				4F33163A2840B845000CCBDA /* UserDetailsVCInteractor.swift */,
 				4F33163C2840B856000CCBDA /* UserDetailsVCPresenter.swift */,
 			);
-			name = "User Details Screen";
+			path = "User Details Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
