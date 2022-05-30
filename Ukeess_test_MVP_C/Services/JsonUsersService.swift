@@ -11,7 +11,6 @@ protocol UserLoader {
     func loadUsers(completion: @escaping ([User]) -> Void)
 }
 
-
 class JsonUsersService: UserLoader {
     
     func loadUsers(completion: @escaping ([User]) -> Void) {

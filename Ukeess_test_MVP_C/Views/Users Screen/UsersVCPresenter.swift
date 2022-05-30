@@ -8,6 +8,7 @@
 import Foundation
 
 protocol UsersVCPresentable: AnyObject {
+    
     var view: UserPresenterViewable? { get set }
     
     func loadUsers()
@@ -20,9 +21,11 @@ protocol UsersVCPresentable: AnyObject {
 class UsersVCPresenter {
     
     private var usersArray = [User]()
+    
     weak var view: UserPresenterViewable?
     
     private let interactor: UsersVCInteractor
+    
     init(interactor: UsersVCInteractor) {
         self.interactor = interactor
     }
@@ -32,7 +35,8 @@ class UsersVCPresenter {
     }
 }
 
-//MARK: - UserVCPresentable
+    //MARK: - UserVCPresentable
+
 extension UsersVCPresenter: UsersVCPresentable {
     
     func loadUsers() {

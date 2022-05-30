@@ -8,18 +8,15 @@
 import Foundation
 import UIKit
 
-
 protocol ImageLoader: AnyObject {
     func loadImage(of imagePath: String, completion: @escaping (UIImage?) -> Void)
 }
-
 
 class UserImageService: ImageLoader {
     
     static let shared = UserImageService()
     
     private init() { }
-    
     
     func loadImage(of imagePath: String, completion: @escaping (UIImage?) -> Void) {
         guard let url = URL(string: imagePath) else { return }
@@ -37,5 +34,4 @@ class UserImageService: ImageLoader {
             }
         }.resume()
     }
-    
 }

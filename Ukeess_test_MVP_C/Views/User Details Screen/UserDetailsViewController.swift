@@ -45,7 +45,8 @@ class UserDetailsViewController: UIViewController {
         emailLabel.text = user.email
         cityLabel.text = user.address.city
         
-        userImageView.image = UIImage(named: "noimage_person")
+        //using default image for all imageviews utntil teh right imnage is loaded
+        userImageView.image = UIImage(named: "no_user_image")
         
         if let imagePath = user.picture {
             presenter.imageLoader.loadImage(of: imagePath, completion: { [weak self] userImage in
@@ -59,6 +60,7 @@ class UserDetailsViewController: UIViewController {
     }
 }
 
+    //MARK: - PersonsTableViewCellModel
 
 struct UserDetailVCModel {
     let user: User?

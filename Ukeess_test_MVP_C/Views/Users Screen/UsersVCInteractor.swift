@@ -10,6 +10,7 @@ import Foundation
 class UsersVCInteractor {
     
     private let userService: UserLoader
+    
     init(userService: UserLoader) {
         self.userService = userService
     }

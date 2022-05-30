@@ -32,10 +32,9 @@ class UsersViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Users"
+        //        title = "Users"
         configurUserTableView()
         presenter.view = self
         presenter.loadUsers()
@@ -46,13 +45,11 @@ class UsersViewController: UIViewController {
         userTableView.frame = view.bounds
         userTableView.dataSource = self
         userTableView.delegate = self
-        
     }
-    
 }
 
+    //MARK: - UITableViewDataSource
 
-//MARK: - UITableViewDataSource
 extension UsersViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -68,7 +65,8 @@ extension UsersViewController: UITableViewDataSource {
 }
 
 
-//MARK: - UITableViewDelegate
+    //MARK: - UITableViewDelegate
+
 extension UsersViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -79,7 +77,8 @@ extension UsersViewController: UITableViewDelegate {
 }
 
 
-//MARK: - UserPresenterViewable
+    //MARK: - UserPresenterViewable
+
 extension UsersViewController: UserPresenterViewable {
     
     func reloadData() {
@@ -90,8 +89,8 @@ extension UsersViewController: UserPresenterViewable {
 }
 
 
-//MARK: - PersonsTableViewCellModel
+    //MARK: - PersonsTableViewCellModel
+
 struct UserTableViewModel {
-    
     let user: User
 }

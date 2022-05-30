@@ -15,59 +15,79 @@ protocol ViewControllersCoordination: AnyObject {
 }
 
 class RootViewController: UIViewController {
-
-    private let jsonButtonTapped = UIButton()
-    private let urlButtonTapped = UIButton()
+    
+    private let jsonButton = UIButton()
+    private let urlButton = UIButton()
+    private let stackView = UIStackView()
     
     weak var coordinator: ViewControllersCoordination?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        
+        configureUI()
+    }
+    
+    private func configureUI() {
         configureJsonButton()
         configureUrlButton()
-    
+        congigureStackView()
     }
-
+    
     private func configureJsonButton() {
-        jsonButtonTapped.addTarget(self, action: #selector(jsonButtonAction), for: .touchUpInside)
-        jsonButtonTapped.setTitle("Load local users", for: .normal)
-        jsonButtonTapped.titleLabel?.font = UIFont.systemFont(ofSize: 25, weight: .light)
-        jsonButtonTapped.setTitleColor(.black, for: .normal)
-        jsonButtonTapped.backgroundColor = .white
-        jsonButtonTapped.layer.borderColor = UIColor.black.cgColor
-        jsonButtonTapped.layer.borderWidth = 1
-        jsonButtonTapped.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(jsonButtonTapped)
-        jsonButtonTapped.heightAnchor.constraint(equalToConstant: 45).isActive = true
-        jsonButtonTapped.widthAnchor.constraint(equalToConstant: 250).isActive = true
-        jsonButtonTapped.layer.cornerRadius = 5
-        view.centerXAnchor.constraint(equalTo: jsonButtonTapped.centerXAnchor).isActive = true
-        view.centerYAnchor.constraint(equalTo: jsonButtonTapped.centerYAnchor).isActive = true
+        jsonButton.addTarget(self, action: #selector(jsonButtonTapped), for: .touchUpInside)
+        jsonButton.setTitle("Show local users", for: .normal)
+        jsonButton.titleLabel?.font = UIFont.systemFont(ofSize: 25, weight: .light)
+        jsonButton.setTitleColor(.black, for: .normal)
+        jsonButton.backgroundColor = .white
+        jsonButton.layer.borderColor = UIColor.black.cgColor
+        jsonButton.layer.borderWidth = 1
+        view.addSubview(jsonButton)
+        
+        //constraints
+        jsonButton.heightAnchor.constraint(equalToConstant: 45).isActive = true
+        jsonButton.widthAnchor.constraint(equalToConstant: 250).isActive = true
+        jsonButton.layer.cornerRadius = 5
     }
     
     private func configureUrlButton() {
-        urlButtonTapped.addTarget(self, action: #selector(urlButtonAction), for: .touchUpInside)
-        urlButtonTapped.setTitle("Load remote users", for: .normal)
-        urlButtonTapped.titleLabel?.font = UIFont.systemFont(ofSize: 25, weight: .light)
-        urlButtonTapped.setTitleColor(.white, for: .normal)
-        urlButtonTapped.backgroundColor = .black
-        urlButtonTapped.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(urlButtonTapped)
-        urlButtonTapped.heightAnchor.constraint(equalToConstant: 45).isActive = true
-        urlButtonTapped.widthAnchor.constraint(equalToConstant: 250).isActive = true
-        urlButtonTapped.layer.cornerRadius = 5
-        urlButtonTapped.centerXAnchor.constraint(equalTo: jsonButtonTapped.centerXAnchor).isActive = true
-        urlButtonTapped.topAnchor.constraint(equalTo: jsonButtonTapped.bottomAnchor, constant: 40.0).isActive = true
+        urlButton.addTarget(self, action: #selector(urlButtonTapped), for: .touchUpInside)
+        urlButton.setTitle("Show remote users", for: .normal)
+        urlButton.titleLabel?.font = UIFont.systemFont(ofSize: 25, weight: .light)
+        urlButton.setTitleColor(.white, for: .normal)
+        urlButton.backgroundColor = .black
+        view.addSubview(urlButton)
+        
+        //constraints
+        urlButton.heightAnchor.constraint(equalToConstant: 45).isActive = true
+        urlButton.widthAnchor.constraint(equalToConstant: 250).isActive = true
+        urlButton.layer.cornerRadius = 5
     }
-
     
-    @objc private func jsonButtonAction() {
+    private func congigureStackView() {
+        stackView.axis  = NSLayoutConstraint.Axis.vertical
+        stackView.distribution  = UIStackView.Distribution.equalSpacing
+        stackView.alignment = UIStackView.Alignment.center
+        stackView.spacing   = 40.0
+        stackView.addArrangedSubview(jsonButton)
+        stackView.addArrangedSubview(urlButton)
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(stackView)
+        
+        //Constraints
+        stackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+    }
+    
+    //MARK: - Target methods
+    
+    @objc
+    private func jsonButtonTapped() {
         coordinator?.showJsonUsersVC()
     }
     
-    @objc private func urlButtonAction() {
+    @objc
+    private func urlButtonTapped() {
         coordinator?.showUrlUsersVC()
     }
 }

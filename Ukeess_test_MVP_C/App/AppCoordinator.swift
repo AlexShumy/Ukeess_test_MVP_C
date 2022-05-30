@@ -19,7 +19,6 @@ class AppCoordinator {
     }
 }
 
-
 extension AppCoordinator: ViewControllersCoordination {
     
     func showRootVC() {

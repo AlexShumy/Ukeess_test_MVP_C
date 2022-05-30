@@ -21,6 +21,7 @@ class DependencyRegistry {
         let interactor = UsersVCInteractor(userService: loader)
         let presenter  = UsersVCPresenter(interactor: interactor)
         let vc = UsersViewController(presenter: presenter)
+        vc.title = "Local users"
         vc.coordinator = coordinator
         return vc
     }
@@ -30,6 +31,7 @@ class DependencyRegistry {
         let interactor = UsersVCInteractor(userService: loader)
         let presenter  = UsersVCPresenter(interactor: interactor)
         let vc = UsersViewController(presenter: presenter)
+        vc.title = "Remote users"
         vc.coordinator = coordinator
         return vc
     }
@@ -41,5 +43,4 @@ class DependencyRegistry {
         let vc = UserDetailsViewController(presenter: presenter)
         return vc
     }
-    
 }

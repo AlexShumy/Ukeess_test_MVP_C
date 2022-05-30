@@ -11,7 +11,6 @@ protocol UserDetailsVCPresentable: AnyObject {
     func getModel() -> UserDetailVCModel
 }
 
-
 class UserDetailsVCPresenter {
     
     private var user: User?
@@ -26,6 +25,7 @@ class UserDetailsVCPresenter {
     }
 }
 
+    //MARK: - UserDetailsVCPresentable
 
 extension UserDetailsVCPresenter: UserDetailsVCPresentable {
     
