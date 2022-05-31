@@ -45,7 +45,7 @@ class RootViewController: UIViewController {
         view.addSubview(jsonButton)
         
         //constraints
-        jsonButton.heightAnchor.constraint(equalToConstant: 45).isActive = true
+        jsonButton.heightAnchor.constraint(equalToConstant: 44).isActive = true
         jsonButton.widthAnchor.constraint(equalToConstant: 250).isActive = true
         jsonButton.layer.cornerRadius = 5
     }
@@ -56,6 +56,8 @@ class RootViewController: UIViewController {
         urlButton.titleLabel?.font = UIFont.systemFont(ofSize: 25, weight: .light)
         urlButton.setTitleColor(.white, for: .normal)
         urlButton.backgroundColor = .black
+        urlButton.layer.borderColor = UIColor.white.cgColor
+        urlButton.layer.borderWidth = 1
         view.addSubview(urlButton)
         
         //constraints
