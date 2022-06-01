@@ -215,7 +215,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4xM-73-lP6" secondAttribute="bottom" constant="30" id="EnO-gA-Tic"/>
                 <constraint firstItem="4xM-73-lP6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="ITJ-yo-kGH"/>
             </constraints>
-            <point key="canvasLocation" x="-3809" y="-94"/>
+            <point key="canvasLocation" x="-4139" y="-349"/>
         </view>
     </objects>
     <resources>

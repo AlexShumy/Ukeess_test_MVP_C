@@ -13,8 +13,6 @@ protocol UserDetailsVCPresentable: AnyObject {
 
 class UserDetailsVCPresenter {
     
-    private var user: User?
-    
     var imageLoader: ImageLoader
     
     private var interactor: UserDetailVCInteractor

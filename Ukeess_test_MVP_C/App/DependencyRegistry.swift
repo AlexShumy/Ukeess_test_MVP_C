@@ -23,6 +23,7 @@ class DependencyRegistry {
         let vc = UsersViewController(presenter: presenter)
         vc.title = "Local users"
         vc.coordinator = coordinator
+        presenter.view = vc
         return vc
     }
     
@@ -33,6 +34,7 @@ class DependencyRegistry {
         let vc = UsersViewController(presenter: presenter)
         vc.title = "Remote users"
         vc.coordinator = coordinator
+        presenter.view = vc
         return vc
     }
     

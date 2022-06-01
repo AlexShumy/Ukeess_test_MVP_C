@@ -13,11 +13,7 @@ protocol UserPresenterViewable: AnyObject {
 
 class UsersViewController: UIViewController {
     
-    private let userTableView: UITableView = {
-        let table = UITableView()
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        return table
-    }()
+    private let userTableView = UITableView()
     
     weak var coordinator: ViewControllersCoordination?
     
@@ -34,13 +30,14 @@ class UsersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        title = "Users"
         configurUserTableView()
-        presenter.view = self
         presenter.loadUsers()
     }
     
     private func configurUserTableView() {
+        
+        userTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
         view.addSubview(userTableView)
         userTableView.frame = view.bounds
         userTableView.dataSource = self

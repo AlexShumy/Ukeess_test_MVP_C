@@ -40,9 +40,9 @@ class UsersVCPresenter {
 extension UsersVCPresenter: UsersVCPresentable {
     
     func loadUsers() {
-        interactor.loadUsers { users in
-            self.usersArray = users
-            self.view?.reloadData()
+        interactor.loadUsers { [weak self] users in
+            self?.usersArray = users
+            self?.view?.reloadData()
         }
     }
     

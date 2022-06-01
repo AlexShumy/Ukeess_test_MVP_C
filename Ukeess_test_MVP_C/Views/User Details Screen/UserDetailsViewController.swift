@@ -38,7 +38,7 @@ class UserDetailsViewController: UIViewController {
     
     func configureUserInfo(with model: UserDetailVCModel) {
         
-        guard let user = model.user else { return }
+        let user = model.user
         idLabel.text = String(user.id)
         nameLabel.text = user.name
         usernameLabel.text = user.username
@@ -63,5 +63,5 @@ class UserDetailsViewController: UIViewController {
     //MARK: - PersonsTableViewCellModel
 
 struct UserDetailVCModel {
-    let user: User?
+    let user: User
 }
